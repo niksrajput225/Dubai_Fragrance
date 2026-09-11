@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ===================================================
+   DUBAI FRAGRANCES - LUXURY ONYX & GOLD DESIGN SYSTEM
+   =================================================== */
+
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-brand: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  --color-onyx-950: #070709;
+  --color-onyx-900: #0E0E13;
+  --color-onyx-800: #16161D;
+  --color-onyx-700: #22222C;
+  
+  --color-gold-300: #F3E5AB;
+  --color-gold-400: #E5C06E;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #AA820A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-onyx-950);
+  color: #E2E8F0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-brand {
+  font-family: var(--font-brand);
+}
+
+/* ===================================================
+   CUSTOM LUXURY SCROLLBAR
+   =================================================== */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D2616;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Horizontal scrollbar hiding for pills */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ===================================================
+   LUXURY GOLD GRADIENTS & SHADOWS
+   =================================================== */
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #9B7811 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFF6D6 0%, #E5C06E 40%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.12);
+}
+
+.shadow-gold {
+  box-shadow: 0 8px 24px -4px rgba(212, 175, 55, 0.25);
+}
+
+.shadow-gold-lg {
+  box-shadow: 0 12px 36px -6px rgba(212, 175, 55, 0.35);
+}
+
+/* ===================================================
+   CARD HOVER & ELEVATION
+   =================================================== */
+.product-card {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .product-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+  }
+}
+
+/* Active Wishlist Heart Pulse */
+.active-wishlist svg,
+.active-wishlist i {
+  filter: drop-shadow(0 0 6px rgba(244, 63, 94, 0.6));
+  animation: heartPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes heartPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+/* ===================================================
+   TICKER & BANNER ANIMATION
+   =================================================== */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ===================================================
+   DRAWER & MODAL BACKDROPS
+   =================================================== */
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Fragrance Pyramid Styling */
+.pyramid-tier {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.pyramid-tier:hover {
+  background: rgba(212, 175, 55, 0.08);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+/* Radio button custom styling for payment */
+.custom-radio:checked {
+  border-color: #D4AF37;
+  background-image: radial-gradient(circle, #D4AF37 40%, transparent 45%);
+}

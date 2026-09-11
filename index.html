@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Fragrances | Artisanal Arabian Attars & Dehn Al Oudh</title>
+  <meta name="description" content="Shop pure, 100% alcohol-free Arabian Attars, Dehn Al Oudh, Musk Tahara, and luxury flacons. Cash On Delivery available across India with instant WhatsApp order confirmation." />
+  <meta name="theme-color" content="#070709" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            onyx: {
+              950: '#070709',
+              900: '#0E0E13',
+              800: '#16161D',
+              700: '#22222C',
+              600: '#32323F'
+            },
+            gold: {
+              300: '#F3E5AB',
+              400: '#E5C06E',
+              500: '#D4AF37',
+              600: '#AA820A',
+              700: '#856404'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            brand: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-onyx-950 text-zinc-100 min-h-screen flex flex-col antialiased pb-20 md:pb-0">
+
+  <!-- ==========================================
+       1. TOP ANNOUNCEMENT TICKER
+       ========================================== -->
+  <div class="bg-gradient-to-r from-onyx-900 via-gold-600/30 to-onyx-900 border-b border-gold-500/20 text-xs py-1.5 px-4 overflow-hidden relative">
+    <div class="animate-marquee whitespace-nowrap flex items-center gap-12 font-medium text-gold-300">
+      <span class="inline-flex items-center gap-2">
+        <i data-lucide="crown" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Festive Special: <strong>Free Royal Velvet Pouch</strong> on all orders</span>
+      </span>
+      <span class="inline-flex items-center gap-2">
+        <i data-lucide="truck" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Unlock <strong>FREE Express Shipping</strong> on orders above ₹499</span>
+      </span>
+      <span class="inline-flex items-center gap-2">
+        <i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>100% Pure Concentrated Perfume Oil • <strong>Zero Alcohol</strong></span>
+      </span>
+      <span class="inline-flex items-center gap-2">
+        <i data-lucide="banknote" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Cash On Delivery (COD) Available Pan-India</span>
+      </span>
+      <!-- Duplicate for seamless looping -->
+      <span class="inline-flex items-center gap-2">
+        <i data-lucide="crown" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Festive Special: <strong>Free Royal Velvet Pouch</strong> on all orders</span>
+      </span>
+      <span class="inline-flex items-center gap-2">
+        <i data-lucide="truck" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Unlock <strong>FREE Express Shipping</strong> on orders above ₹499</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       2. STICKY HEADER (DESKTOP & MOBILE)
+       ========================================== -->
+  <header class="sticky top-0 z-40 bg-onyx-950/90 backdrop-blur-xl border-b border-zinc-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20 gap-4">
+        
+        <!-- Logo & Brand Identity -->
+        <a href="#" class="flex items-center gap-3 shrink-0 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-gold-400 to-amber-600 p-[1.5px] shadow-gold/20 shadow-lg">
+            <div class="w-full h-full bg-onyx-950 rounded-[10px] flex items-center justify-center">
+              <i data-lucide="flame" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-400 group-hover:scale-110 transition-transform"></i>
+            </div>
+          </div>
+          <div>
+            <span class="block font-brand text-base sm:text-xl font-bold tracking-[0.2em] text-gradient-gold">
+              DUBAI FRAGRANCES
+            </span>
+            <span class="block text-[10px] tracking-[0.25em] text-zinc-400 uppercase font-sans -mt-0.5">
+              Artisanal Arabian Attars
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Search Bar (Wide Amazon/Flipkart Style) -->
+        <div class="hidden md:flex flex-1 max-w-xl mx-6">
+          <div class="relative w-full">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-400">
+              <i data-lucide="search" class="w-4 h-4 text-gold-400"></i>
+            </div>
+            <input 
+              type="text" 
+              id="desktopSearchInput"
+              placeholder="Search by attar name, notes (oud, musk, amber, rose, vanilla)..."
+              class="w-full pl-10 pr-4 py-2.5 rounded-full bg-onyx-900 border border-zinc-700/80 text-sm text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500/50 transition-all"
+            />
+          </div>
+        </div>
+
+        <!-- Action Icons (Account, Wishlist & Cart) -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          
+          <!-- Trust Pill (Desktop Only) -->
+          <div class="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-onyx-900 border border-gold-500/20 text-xs text-gold-300 font-medium mr-1">
+            <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i>
+            <span>100% Non-Alcoholic</span>
+          </div>
+
+          <!-- User Account / Sign In Trigger Button -->
+          <button 
+            type="button" 
+            id="headerAccountBtn"
+            title="My Account"
+            class="p-2 sm:px-3 sm:py-2 rounded-xl bg-onyx-900 hover:bg-onyx-800 text-zinc-300 hover:text-gold-400 border border-zinc-800 hover:border-gold-500/30 transition-all flex items-center gap-2"
+          >
+            <i data-lucide="user" class="w-5 h-5 text-gold-400"></i>
+            <span class="hidden lg:inline text-xs font-semibold">Sign In</span>
+          </button>
+
+          <!-- Wishlist Trigger -->
+          <button 
+            type="button" 
+            onclick="openWishlistDrawer()"
+            title="Open Wishlist"
+            class="relative p-2.5 rounded-xl bg-onyx-900 hover:bg-onyx-800 text-zinc-300 hover:text-gold-400 border border-zinc-800 hover:border-gold-500/30 transition-all"
+          >
+            <i data-lucide="heart" class="w-5 h-5"></i>
+            <span class="wishlist-count-badge hidden absolute -top-1.5 -right-1.5 min-w-[20px] h-5 px-1 rounded-full bg-rose-600 text-white text-[11px] font-bold flex items-center justify-center border-2 border-onyx-950">
+              0
+            </span>
+          </button>
+
+          <!-- Cart Trigger -->
+          <button 
+            type="button" 
+            onclick="openCartDrawer()"
+            title="Open Bag"
+            class="relative flex items-center gap-2.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-black font-semibold text-xs sm:text-sm hover:opacity-95 transition-all shadow-gold/20 shadow-md active:scale-95"
+          >
+            <div class="relative">
+              <i data-lucide="shopping-bag" class="w-4 h-4 sm:w-5 sm:h-5 fill-black/20"></i>
+              <span class="cart-count-badge hidden absolute -top-2.5 -right-2.5 min-w-[18px] h-4.5 px-1 rounded-full bg-black text-gold-300 text-[10px] font-extrabold flex items-center justify-center border border-gold-400">
+                0
+              </span>
+            </div>
+            <span class="hidden sm:inline tracking-wider uppercase font-bold">Bag</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Mobile Search Bar (Directly below compact header on phones) -->
+      <div class="md:hidden pb-3 pt-1">
+        <div class="relative w-full">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-zinc-400">
+            <i data-lucide="search" class="w-4 h-4 text-gold-400"></i>
+          </div>
+          <input 
+            type="text" 
+            id="mobileSearchInput"
+            placeholder="Search attars, oudh, musk, rose, vanilla..."
+            class="w-full pl-10 pr-4 py-2 rounded-full bg-onyx-900 border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500/50"
+          />
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       3. HERO SHOWCASE
+       ========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-onyx-900 via-onyx-950 to-onyx-950 border-b border-zinc-800/80 py-10 sm:py-16">
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-96 sm:w-[600px] h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 text-xs font-semibold uppercase tracking-widest mb-4">
+        <i data-lucide="gem" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>Artisanal Perfume Oils & Dehn Al Oudh</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight mb-4 max-w-4xl mx-auto leading-tight">
+        Liquid Royalty from the <span class="text-gradient-gold">Arabian Dunes</span>
+      </h1>
+
+      <p class="text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
+        Experience concentrated attars handcrafted with aged Cambodian agarwood, velvety white musks, and single-origin Taif roses. 100% alcohol-free with 14+ hours of opulent sillage.
+      </p>
+
+      <!-- Trust Pillars Row -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
+        <div class="p-3 sm:p-4 rounded-xl bg-onyx-900/60 border border-zinc-800/80 flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center shrink-0 text-gold-400">
+            <i data-lucide="droplet" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h6 class="text-xs font-bold text-white uppercase tracking-wider">100% Pure Oil</h6>
+            <p class="text-[11px] text-zinc-400">Zero alcohol or dilution</p>
+          </div>
+        </div>
+
+        <div class="p-3 sm:p-4 rounded-xl bg-onyx-900/60 border border-zinc-800/80 flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center shrink-0 text-gold-400">
+            <i data-lucide="clock-4" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h6 class="text-xs font-bold text-white uppercase tracking-wider">14+ Hours</h6>
+            <p class="text-[11px] text-zinc-400">Long-lasting projection</p>
+          </div>
+        </div>
+
+        <div class="p-3 sm:p-4 rounded-xl bg-onyx-900/60 border border-zinc-800/80 flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center shrink-0 text-gold-400">
+            <i data-lucide="banknote" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h6 class="text-xs font-bold text-white uppercase tracking-wider">Cash on Delivery</h6>
+            <p class="text-[11px] text-zinc-400">Pay at your doorstep</p>
+          </div>
+        </div>
+
+        <div class="p-3 sm:p-4 rounded-xl bg-onyx-900/60 border border-zinc-800/80 flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center shrink-0 text-gold-400">
+            <i data-lucide="package-check" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h6 class="text-xs font-bold text-white uppercase tracking-wider">Safe Delivery</h6>
+            <p class="text-[11px] text-zinc-400">Dispatched in 24 hrs</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. CATEGORY FILTER PILLS & SORT CONTROLS
+       ========================================== -->
+  <section class="sticky top-16 sm:top-20 z-30 bg-onyx-950/95 backdrop-blur-md border-b border-zinc-800/80 py-3 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+        
+        <!-- Horizontally Scrollable Category Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 -mx-4 px-4 sm:mx-0 sm:px-0">
+          <button 
+            type="button" 
+            data-category-pill="All" 
+            class="shrink-0 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-gold-500 text-black shadow-gold/30"
+          >
+            All Blends
+          </button>
+          <button 
+            type="button" 
+            data-category-pill="Combos & Offers" 
+            class="shrink-0 px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all bg-onyx-800 text-zinc-300 border border-zinc-700/80 hover:border-gold-500/40 hover:text-white"
+          >
+            🔥 Combos & Offers
+          </button>
+          <button 
+            type="button" 
+            data-category-pill="Oudh & Woody" 
+            class="shrink-0 px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all bg-onyx-800 text-zinc-300 border border-zinc-700/80 hover:border-gold-500/40 hover:text-white"
+          >
+            🪵 Oudh & Woody
+          </button>
+          <button 
+            type="button" 
+            data-category-pill="Pure Musk" 
+            class="shrink-0 px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all bg-onyx-800 text-zinc-300 border border-zinc-700/80 hover:border-gold-500/40 hover:text-white"
+          >
+            🕊️ Pure Musk
+          </button>
+          <button 
+            type="button" 
+            data-category-pill="Floral & Fresh" 
+            class="shrink-0 px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all bg-onyx-800 text-zinc-300 border border-zinc-700/80 hover:border-gold-500/40 hover:text-white"
+          >
+            🌹 Floral & Fresh
+          </button>
+          <button 
+            type="button" 
+            data-category-pill="Warm Oriental" 
+            class="shrink-0 px-4 py-2 rounded-full text-xs font-medium uppercase tracking-wider transition-all bg-onyx-800 text-zinc-300 border border-zinc-700/80 hover:border-gold-500/40 hover:text-white"
+          >
+            ✨ Warm Oriental
+          </button>
+        </div>
+
+        <!-- Right Side: Count Label & Sort Dropdown -->
+        <div class="flex items-center justify-between md:justify-end gap-3 shrink-0 pt-1 md:pt-0 border-t border-zinc-800/60 md:border-0">
+          <span id="productCountLabel" class="text-xs text-zinc-400 font-medium">
+            Showing 40 Artisanal Blends
+          </span>
+
+          <div class="flex items-center gap-1.5">
+            <label for="sortSelect" class="text-xs text-zinc-400 hidden sm:inline">Sort By:</label>
+            <select 
+              id="sortSelect" 
+              class="bg-onyx-900 border border-zinc-700/80 rounded-lg px-2.5 py-1.5 text-xs text-zinc-200 focus:outline-none focus:border-gold-500"
+            >
+              <option value="popular">Bestsellers & Popular</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Customer Rating</option>
+              <option value="saving">Highest Discount %</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. MAIN PRODUCT CATALOG GRID
+       ========================================== -->
+  <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+    <div 
+      id="productsGrid" 
+      class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6"
+    >
+      <!-- Dynamically populated by js/app.js -->
+    </div>
+  </main>
+
+  <!-- ==========================================
+       6. STORE FOOTER
+       ========================================== -->
+  <footer class="bg-onyx-900 border-t border-zinc-800/80 pt-12 pb-16 text-zinc-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <i data-lucide="flame" class="w-6 h-6 text-gold-400"></i>
+            <span class="font-brand text-lg font-bold tracking-widest text-gradient-gold">DUBAI FRAGRANCES</span>
+          </div>
+          <p class="text-zinc-400 text-xs leading-relaxed max-w-md mb-4">
+            Curators and distillers of antique Arabian attars, pure Dehn Al Oudh flacons, and velvety Tahara musks. Every blend is 100% alcohol-free, skin-nourishing, and matured for unforgettable depth.
+          </p>
+          <div class="flex items-center gap-3 text-gold-400">
+            <span class="px-3 py-1 rounded-full bg-onyx-800 border border-gold-500/20 text-[11px]">
+              👑 Royal Quality Guarantee
+            </span>
+            <span class="px-3 py-1 rounded-full bg-onyx-800 border border-gold-500/20 text-[11px]">
+              🌿 100% Non-Alcoholic
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h5 class="text-white font-serif font-semibold text-sm mb-3">Collections</h5>
+          <ul class="space-y-2">
+            <li><button onclick="filterCategoryByFooter('Oudh & Woody')" class="hover:text-gold-300 transition-colors">Aged Oudh & Woods</button></li>
+            <li><button onclick="filterCategoryByFooter('Pure Musk')" class="hover:text-gold-300 transition-colors">Pure Tahara Musks</button></li>
+            <li><button onclick="filterCategoryByFooter('Floral & Fresh')" class="hover:text-gold-300 transition-colors">Fresh Florals & Roses</button></li>
+            <li><button onclick="filterCategoryByFooter('Warm Oriental')" class="hover:text-gold-300 transition-colors">Warm Orientals & Ambers</button></li>
+            <li><button onclick="filterCategoryByFooter('Combos & Offers')" class="hover:text-gold-300 transition-colors">Royal Gift Sets & Combos</button></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Support -->
+        <div>
+          <h5 class="text-white font-serif font-semibold text-sm mb-3">Concierge & Orders</h5>
+          <p class="text-zinc-400 mb-2">Need help picking your signature scent?</p>
+          <a 
+            href="https://wa.me/919876543210?text=Hello%20Dubai%20Fragrances,%20I%20would%20like%20assistance%20with%20choosing%20an%20attar."
+            target="_blank" 
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-600 hover:text-white transition-all font-medium text-xs mb-3"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+          <p class="text-[11px] text-zinc-400">Direct Delivery Support: +91 98765 43210</p>
+        </div>
+
+      </div>
+
+      <div class="border-t border-zinc-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-400">
+        <p>© 2026 Dubai Fragrances. All Rights Reserved. Artisanal Arabian Perfumery.</p>
+        <div class="flex items-center gap-4">
+          <span>Safe & Secure Packaging</span>
+          <span>•</span>
+          <span>Cash On Delivery Verified</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       7. MOBILE FIXED BOTTOM NAVIGATION BAR
+       ========================================== -->
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-onyx-950/95 backdrop-blur-xl border-t border-zinc-800/80 py-2 px-4 flex items-center justify-around">
+    <button 
+      type="button" 
+      data-nav-target="home"
+      class="flex flex-col items-center gap-1 text-gold-400 font-medium"
+    >
+      <i data-lucide="home" class="w-5 h-5"></i>
+      <span class="text-[10px] tracking-wider">Home</span>
+    </button>
+
+    <button 
+      type="button" 
+      data-nav-target="search"
+      class="flex flex-col items-center gap-1 text-zinc-400 hover:text-gold-400 transition-colors"
+    >
+      <i data-lucide="search" class="w-5 h-5"></i>
+      <span class="text-[10px] tracking-wider">Search</span>
+    </button>
+
+    <button 
+      type="button" 
+      data-nav-target="wishlist"
+      class="relative flex flex-col items-center gap-1 text-zinc-400 hover:text-gold-400 transition-colors"
+    >
+      <div class="relative">
+        <i data-lucide="heart" class="w-5 h-5"></i>
+        <span class="wishlist-count-badge hidden absolute -top-1.5 -right-2 min-w-[16px] h-4 px-0.5 rounded-full bg-rose-600 text-white text-[9px] font-bold flex items-center justify-center">
+          0
+        </span>
+      </div>
+      <span class="text-[10px] tracking-wider">Wishlist</span>
+    </button>
+
+    <button 
+      type="button" 
+      data-nav-target="cart"
+      class="relative flex flex-col items-center gap-1 text-zinc-400 hover:text-gold-400 transition-colors"
+    >
+      <div class="relative">
+        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        <span class="cart-count-badge hidden absolute -top-1.5 -right-2 min-w-[16px] h-4 px-0.5 rounded-full bg-gold-500 text-black text-[9px] font-bold flex items-center justify-center">
+          0
+        </span>
+      </div>
+      <span class="text-[10px] tracking-wider">Bag</span>
+    </button>
+
+    <button 
+      type="button" 
+      data-nav-target="account"
+      class="flex flex-col items-center gap-1 text-zinc-400 hover:text-gold-400 transition-colors"
+    >
+      <i data-lucide="user" class="w-5 h-5"></i>
+      <span class="text-[10px] tracking-wider">Account</span>
+    </button>
+  </nav>
+
+  <!-- ==========================================
+       8. UNIVERSAL DRAWER BACKDROP
+       ========================================== -->
+  <div 
+    id="drawerBackdrop" 
+    class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-sm transition-opacity duration-300"
+    onclick="closeAllDrawers()"
+  ></div>
+
+  <!-- ==========================================
+       9. CART SLIDE-OVER DRAWER
+       ========================================== -->
+  <aside 
+    id="cartDrawer" 
+    class="fixed top-0 right-0 bottom-0 z-50 w-full max-w-md bg-onyx-950 border-l border-zinc-800 flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl"
+  >
+    <!-- Drawer Header -->
+    <div class="flex items-center justify-between p-4 border-b border-zinc-800/80">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-gold-400"></i>
+        <h3 class="font-serif text-lg font-bold text-white">Your Fragrance Bag</h3>
+        <span id="cartDrawerCount" class="text-xs text-zinc-400">(0 items)</span>
+      </div>
+      <button onclick="closeCartDrawer()" class="p-1 text-zinc-400 hover:text-white rounded-lg hover:bg-onyx-800 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Bar -->
+    <div class="px-4 py-3 bg-onyx-900 border-b border-zinc-800/80">
+      <div class="flex items-center justify-between text-xs mb-1.5" id="freeShippingText">
+        <span>Add ₹499 more to unlock FREE Royal Delivery</span>
+      </div>
+      <div class="w-full h-2 rounded-full bg-onyx-800 overflow-hidden border border-zinc-800">
+        <div id="freeShippingBar" class="h-full rounded-full transition-all duration-500 bg-gradient-to-r from-gold-500 to-amber-500" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- Cart Line Items Container -->
+    <div id="cartDrawerItems" class="flex-1 overflow-y-auto p-4 space-y-3">
+      <!-- Injected by js/cart.js -->
+    </div>
+
+    <!-- Drawer Footer / Checkout CTA -->
+    <div class="p-4 bg-onyx-900 border-t border-zinc-800/80 space-y-3">
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-zinc-400">Bag Subtotal</span>
+        <span id="cartDrawerSubtotal" class="font-extrabold text-gold-400 font-sans text-lg">₹0</span>
+      </div>
+      <div class="flex items-center justify-between text-xs text-zinc-400">
+        <span>Cash On Delivery</span>
+        <span class="text-emerald-400 font-semibold">Available</span>
+      </div>
+
+      <button 
+        id="cartDrawerCheckoutBtn"
+        type="button" 
+        onclick="proceedToCartCheckout()"
+        class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-gold-600 text-black font-bold text-sm tracking-wider uppercase flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-gold/30 shadow-lg"
+      >
+        <i data-lucide="zap" class="w-4 h-4 fill-black text-black"></i>
+        <span>Proceed to COD Checkout</span>
+      </button>
+
+      <p class="text-[10px] text-zinc-400 text-center flex items-center justify-center gap-1">
+        <i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold-400"></i>
+        <span>No advance payment needed • Pay at your doorstep</span>
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       10. WISHLIST SLIDE-OVER DRAWER
+       ========================================== -->
+  <aside 
+    id="wishlistDrawer" 
+    class="fixed top-0 right-0 bottom-0 z-50 w-full max-w-md bg-onyx-950 border-l border-zinc-800 flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl"
+  >
+    <!-- Drawer Header -->
+    <div class="flex items-center justify-between p-4 border-b border-zinc-800/80">
+      <div class="flex items-center gap-2">
+        <i data-lucide="heart" class="w-5 h-5 text-rose-500 fill-rose-500"></i>
+        <h3 class="font-serif text-lg font-bold text-white">Your Wishlist</h3>
+        <span id="wishlistDrawerCount" class="text-xs text-zinc-400">(0 items)</span>
+      </div>
+      <button onclick="closeWishlistDrawer()" class="p-1 text-zinc-400 hover:text-white rounded-lg hover:bg-onyx-800 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Wishlist Items Container -->
+    <div id="wishlistDrawerItems" class="flex-1 overflow-y-auto p-4 space-y-3">
+      <!-- Injected by js/wishlist.js -->
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       11. OLFACTORY PYRAMID & PRODUCT DETAILS MODAL
+       ========================================== -->
+  <div 
+    id="pyramidModal" 
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto"
+  >
+    <div class="relative w-full max-w-2xl bg-onyx-900 border border-gold-500/30 rounded-2xl shadow-2xl overflow-hidden my-8">
+      
+      <!-- Close Button -->
+      <button 
+        onclick="closePyramidModal()" 
+        class="absolute top-4 right-4 z-10 p-2 rounded-full bg-onyx-950/80 text-zinc-400 hover:text-white hover:bg-onyx-800 transition-all border border-white/10"
+      >
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <!-- Left: Image & Quick Badges -->
+        <div class="relative bg-onyx-950 h-56 md:h-full overflow-hidden">
+          <img id="pyramidModalImage" src="" alt="Product" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-onyx-950 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-gold-300">
+            <span class="bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-gold-500/20 font-medium" id="pyramidModalCategory">Category</span>
+            <div class="flex items-center gap-1 bg-black/60 backdrop-blur-md px-2 py-1 rounded-md border border-gold-500/20">
+              <i data-lucide="star" class="w-3.5 h-3.5 text-amber-400 fill-amber-400"></i>
+              <span id="pyramidModalRating" class="font-bold">4.9</span>
+              <span id="pyramidModalReviews" class="text-[10px] text-zinc-400">(0)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Olfactory Notes & Actions -->
+        <div class="p-5 sm:p-6 flex flex-col justify-between max-h-[85vh] overflow-y-auto">
+          <div>
+            <h3 id="pyramidModalName" class="font-serif text-xl sm:text-2xl font-bold text-white mb-2"></h3>
+            <p id="pyramidModalDesc" class="text-xs text-zinc-400 mb-4 leading-relaxed"></p>
+
+            <!-- Fragrance Pyramid Breakdown -->
+            <div class="mb-5 space-y-2.5">
+              <h5 class="text-[11px] font-bold uppercase tracking-widest text-gold-400 flex items-center gap-1.5">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Olfactory Pyramid</span>
+              </h5>
+
+              <!-- Top Notes -->
+              <div class="pyramid-tier p-2.5 rounded-xl bg-onyx-950 border border-zinc-800">
+                <div class="text-[10px] font-semibold text-gold-400 uppercase tracking-wider mb-0.5">Top Notes (First Impression)</div>
+                <div id="pyramidTopNotes" class="text-xs text-zinc-200"></div>
+              </div>
+
+              <!-- Heart Notes -->
+              <div class="pyramid-tier p-2.5 rounded-xl bg-onyx-950 border border-zinc-800">
+                <div class="text-[10px] font-semibold text-gold-400 uppercase tracking-wider mb-0.5">Heart Notes (Character & Sillage)</div>
+                <div id="pyramidHeartNotes" class="text-xs text-zinc-200"></div>
+              </div>
+
+              <!-- Base Notes -->
+              <div class="pyramid-tier p-2.5 rounded-xl bg-onyx-950 border border-zinc-800">
+                <div class="text-[10px] font-semibold text-gold-400 uppercase tracking-wider mb-0.5">Base Notes (Enduring Drydown)</div>
+                <div id="pyramidBaseNotes" class="text-xs text-zinc-200"></div>
+              </div>
+            </div>
+
+            <!-- Features Pills -->
+            <div id="pyramidFeatures" class="flex flex-wrap gap-1.5 mb-5"></div>
+          </div>
+
+          <!-- Bottom: Size Selection & Dual CTA -->
+          <div class="pt-4 border-t border-zinc-800/80">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <span class="text-xs text-zinc-400 block">Select Bottle Size:</span>
+                <div id="pyramidModalSizes" class="flex gap-2 mt-1"></div>
+              </div>
+              <div class="text-right">
+                <div class="text-xl font-extrabold text-gold-400 font-sans" id="pyramidModalPrice">₹0</div>
+                <div class="text-xs text-zinc-500 line-through font-sans" id="pyramidModalOrigPrice">₹0</div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <button 
+                type="button" 
+                onclick="handleModalAddToBag()" 
+                class="py-2.5 px-3 rounded-xl bg-onyx-800 hover:bg-onyx-700 text-gold-300 border border-gold-500/30 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all"
+              >
+                <i data-lucide="shopping-bag" class="w-4 h-4 text-gold-400"></i>
+                <span>Add to Bag</span>
+              </button>
+              <button 
+                type="button" 
+                onclick="handleModalBuyCOD()" 
+                class="py-2.5 px-3 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-black text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-gold/20 shadow-md hover:opacity-95"
+              >
+                <i data-lucide="zap" class="w-4 h-4 fill-black text-black"></i>
+                <span>Buy COD Now</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       12. CASH ON DELIVERY (COD) CHECKOUT MODAL
+       ========================================== -->
+  <div 
+    id="checkoutModal" 
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto"
+  >
+    <div class="relative w-full max-w-lg bg-onyx-900 border border-gold-500/30 rounded-2xl shadow-2xl overflow-hidden my-8">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between p-4 sm:p-5 border-b border-zinc-800/80 bg-onyx-950">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400">
+            <i data-lucide="truck" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h4 class="font-serif text-base sm:text-lg font-bold text-white">Cash On Delivery Checkout</h4>
+            <p class="text-[11px] text-zinc-400">Zero Advance • Pay at Your Doorstep</p>
+          </div>
+        </div>
+        <button onclick="closeCheckoutModal()" class="p-1 text-zinc-400 hover:text-white rounded-lg hover:bg-onyx-800 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Checkout Form -->
+      <form onsubmit="handleCheckoutFormSubmit(event)" class="p-4 sm:p-6 space-y-4 max-h-[80vh] overflow-y-auto">
+        
+        <!-- Order Items Summary Accordion -->
+        <div class="rounded-xl bg-onyx-950 p-3.5 border border-zinc-800">
+          <span class="text-[11px] font-semibold text-gold-400 uppercase tracking-wider block mb-2">Order Items:</span>
+          <div id="checkoutItemsSummary" class="space-y-1"></div>
+        </div>
+
+        <!-- Shipping Form Inputs -->
+        <div class="space-y-3">
+          <span class="text-xs font-bold text-white uppercase tracking-wider block">1. Delivery Address</span>
+          
+          <div>
+            <label class="block text-xs text-zinc-300 font-medium mb-1">Full Name *</label>
+            <input 
+              type="text" 
+              name="fullName" 
+              required 
+              placeholder="e.g. Rahul Sharma / Fatima Sheikh"
+              class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-sm text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-xs text-zinc-300 font-medium mb-1">10-Digit Mobile Number (For Delivery SMS/Call) *</label>
+            <div class="flex items-center">
+              <span class="px-3 py-2 bg-onyx-800 border border-r-0 border-zinc-700/80 rounded-l-xl text-xs text-zinc-400 font-mono">+91</span>
+              <input 
+                type="tel" 
+                name="phone" 
+                required 
+                maxlength="10"
+                pattern="[6-9][0-9]{9}"
+                placeholder="9876543210"
+                class="w-full px-3.5 py-2 rounded-r-xl bg-onyx-950 border border-zinc-700/80 text-sm text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500 font-mono"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs text-zinc-300 font-medium mb-1">Complete Street Address (Flat / House No., Landmark) *</label>
+            <textarea 
+              name="address" 
+              rows="2" 
+              required
+              placeholder="House 402, Royal Palms, Near Grand Mall"
+              class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-sm text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500"
+            ></textarea>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs text-zinc-300 font-medium mb-1">City *</label>
+              <input 
+                type="text" 
+                name="city" 
+                required 
+                placeholder="e.g. Mumbai / Delhi"
+                class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-sm text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500"
+              />
+            </div>
+            <div>
+              <label class="block text-xs text-zinc-300 font-medium mb-1">Pincode *</label>
+              <input 
+                type="text" 
+                name="pincode" 
+                required 
+                maxlength="6"
+                pattern="[0-9]{6}"
+                placeholder="400001"
+                class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-sm text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500 font-mono"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Method Selection -->
+        <div class="pt-2">
+          <span class="text-xs font-bold text-white uppercase tracking-wider block mb-2">2. Payment Method</span>
+          
+          <div class="space-y-2">
+            <!-- COD Option (Active & Default) -->
+            <label class="flex items-center justify-between p-3 rounded-xl bg-gold-500/10 border-2 border-gold-500 cursor-pointer">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="paymentMethod" value="COD" checked class="custom-radio w-4 h-4 text-gold-500 focus:ring-0" />
+                <div>
+                  <div class="text-xs font-bold text-white flex items-center gap-2">
+                    <span>Cash On Delivery (COD)</span>
+                    <span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">Recommended</span>
+                  </div>
+                  <p class="text-[11px] text-zinc-400">Pay cash or UPI to courier agent on delivery</p>
+                </div>
+              </div>
+              <span class="text-xs font-bold text-emerald-400">FREE</span>
+            </label>
+
+            <!-- UPI/Online Payment (Disabled / Coming Soon) -->
+            <label class="flex items-center justify-between p-3 rounded-xl bg-onyx-950 border border-zinc-800 opacity-60 cursor-not-allowed">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="paymentMethod" value="ONLINE" disabled class="w-4 h-4" />
+                <div>
+                  <div class="text-xs font-semibold text-zinc-400">Instant UPI / Credit Cards / NetBanking</div>
+                  <p class="text-[10px] text-zinc-400">Direct gateway processing</p>
+                </div>
+              </div>
+              <span class="px-2 py-0.5 rounded bg-zinc-800 text-zinc-400 text-[10px] font-semibold uppercase">Coming Soon</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Order Total Breakdown -->
+        <div class="p-3.5 rounded-xl bg-onyx-950 border border-zinc-800 space-y-1.5 text-xs">
+          <div class="flex justify-between text-zinc-400">
+            <span>Items Subtotal:</span>
+            <span id="checkoutSubtotal" class="text-zinc-200 font-semibold font-sans">₹0</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>Express Courier Shipping:</span>
+            <span id="checkoutShipping" class="font-semibold font-sans">₹0</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>COD Convenience Fee:</span>
+            <span id="checkoutCodFee" class="font-semibold font-sans">₹0 (FREE)</span>
+          </div>
+          <div class="flex justify-between text-sm font-bold text-white pt-2 border-t border-zinc-800">
+            <span>Total Payable on Delivery:</span>
+            <span id="checkoutTotalPayable" class="text-gold-400 font-sans text-base font-extrabold">₹0</span>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+          type="submit" 
+          class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-gold-600 text-black font-extrabold text-sm tracking-wider uppercase flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-gold/30 shadow-lg active:scale-95"
+        >
+          <i data-lucide="check-circle" class="w-4 h-4"></i>
+          <span>Place Cash On Delivery Order</span>
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       13. ORDER CONFIRMATION & WHATSAPP MODAL
+       ========================================== -->
+  <div 
+    id="orderSuccessModal" 
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto"
+  >
+    <div class="relative w-full max-w-md bg-onyx-900 border border-gold-500/40 rounded-2xl shadow-2xl p-6 text-center my-8">
+      
+      <!-- Success Icon -->
+      <div class="w-16 h-16 rounded-full bg-emerald-500/10 border-2 border-emerald-500/40 mx-auto flex items-center justify-center mb-4 text-emerald-400">
+        <i data-lucide="badge-check" class="w-9 h-9"></i>
+      </div>
+
+      <h3 class="font-serif text-2xl font-bold text-white mb-1">Order Placed Successfully!</h3>
+      <p class="text-xs text-zinc-400 mb-5">Your Cash On Delivery order is logged and reserved for dispatch.</p>
+
+      <!-- Order Summary Card -->
+      <div class="p-4 rounded-xl bg-onyx-950 border border-zinc-800 text-left space-y-2 mb-6 text-xs">
+        <div class="flex justify-between pb-2 border-b border-zinc-800/80">
+          <span class="text-zinc-400">Order ID:</span>
+          <span id="successOrderId" class="font-mono font-bold text-gold-400">DF-000000</span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-zinc-400">Customer:</span>
+          <span id="successCustomerName" class="font-semibold text-white"></span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-zinc-400">Mobile:</span>
+          <span id="successCustomerPhone" class="font-mono text-zinc-200"></span>
+        </div>
+        <div class="flex justify-between">
+          <span class="text-zinc-400">Delivery Address:</span>
+          <span id="successCustomerAddress" class="font-medium text-zinc-300 text-right truncate max-w-[200px]"></span>
+        </div>
+        <div class="flex justify-between pt-2 border-t border-zinc-800/80 font-bold text-sm">
+          <span class="text-white">Total Payable (COD):</span>
+          <span id="successTotalAmount" class="text-gold-400 font-sans">₹0</span>
+        </div>
+      </div>
+
+      <!-- Prominent Send Order to WhatsApp Button -->
+      <a 
+        id="sendOrderWhatsAppBtn"
+        href="#"
+        target="_blank"
+        class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 text-white font-bold text-sm tracking-wide flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-lg shadow-emerald-600/30 mb-3"
+      >
+        <i data-lucide="message-circle" class="w-5 h-5 fill-white text-white"></i>
+        <span>Send Order to WhatsApp</span>
+      </a>
+
+      <button 
+        type="button" 
+        onclick="closeOrderSuccessModal()" 
+        class="w-full py-2.5 px-4 rounded-xl bg-onyx-800 hover:bg-onyx-700 text-zinc-300 text-xs font-semibold tracking-wider uppercase transition-colors"
+      >
+        Continue Shopping
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       14. AUTHENTICATION (SIGN UP & SIGN IN) MODAL
+       ========================================== -->
+  <div 
+    id="authModal" 
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto"
+  >
+    <div class="relative w-full max-w-md bg-onyx-900 border border-gold-500/40 rounded-2xl shadow-2xl p-6 my-8">
+      
+      <!-- Close Button -->
+      <button 
+        onclick="closeAuthModal()" 
+        class="absolute top-4 right-4 p-2 rounded-full bg-onyx-950 text-zinc-400 hover:text-white hover:bg-onyx-800 transition-colors border border-white/10"
+      >
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Brand Header -->
+      <div class="text-center mb-5">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-amber-600 p-[1.5px] mx-auto mb-3 shadow-gold/20 shadow-lg">
+          <div class="w-full h-full bg-onyx-950 rounded-[10px] flex items-center justify-center">
+            <i data-lucide="crown" class="w-6 h-6 text-gold-400"></i>
+          </div>
+        </div>
+        <h4 class="font-serif text-xl font-bold text-white mb-1">Dubai Fragrances</h4>
+        <p id="authNoticeText" class="text-xs text-zinc-400 max-w-xs mx-auto">
+          Please create an account to track your orders and access Cash On Delivery.
+        </p>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div class="flex rounded-xl bg-onyx-950 p-1 border border-zinc-800 mb-5">
+        <button 
+          id="tabBtnSignup" 
+          onclick="switchAuthTab('signup')"
+          class="flex-1 py-2 text-xs font-bold uppercase tracking-wider rounded-lg transition-all bg-gold-500 text-black shadow-md"
+        >
+          Create Account
+        </button>
+        <button 
+          id="tabBtnLogin" 
+          onclick="switchAuthTab('login')"
+          class="flex-1 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg transition-all bg-transparent text-zinc-400 hover:text-white"
+        >
+          Sign In
+        </button>
+      </div>
+
+      <!-- 1. Sign Up Form -->
+      <form id="signupForm" onsubmit="handleSignupSubmit(event)" class="space-y-3 text-left">
+        <div>
+          <label class="block text-xs text-zinc-300 font-medium mb-1">Full Name *</label>
+          <input 
+            type="text" 
+            name="name" 
+            required 
+            placeholder="e.g. Tariq Mansoor"
+            class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs text-zinc-300 font-medium mb-1">10-Digit Mobile Number (For COD Verification) *</label>
+          <div class="flex items-center">
+            <span class="px-3 py-2 bg-onyx-800 border border-r-0 border-zinc-700/80 rounded-l-xl text-xs text-zinc-400 font-mono">+91</span>
+            <input 
+              type="tel" 
+              name="phone" 
+              required 
+              maxlength="10"
+              pattern="[6-9][0-9]{9}"
+              placeholder="9876543210"
+              class="w-full px-3.5 py-2 rounded-r-xl bg-onyx-950 border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500 font-mono"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs text-zinc-300 font-medium mb-1">Email Address *</label>
+          <input 
+            type="email" 
+            name="email" 
+            required 
+            placeholder="tariq@example.com"
+            class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs text-zinc-300 font-medium mb-1">Create Password *</label>
+          <input 
+            type="password" 
+            name="password" 
+            required 
+            minlength="4"
+            placeholder="••••••••"
+            class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500"
+          />
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full mt-4 py-3 px-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-gold-600 text-black font-extrabold text-xs tracking-wider uppercase flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-gold/30 shadow-lg active:scale-95"
+        >
+          <i data-lucide="user-plus" class="w-4 h-4"></i>
+          <span>Create Account & Continue</span>
+        </button>
+      </form>
+
+      <!-- 2. Sign In Form -->
+      <form id="loginForm" onsubmit="handleLoginSubmit(event)" class="hidden space-y-3.5 text-left">
+        <div>
+          <label class="block text-xs text-zinc-300 font-medium mb-1">Mobile Number or Email *</label>
+          <input 
+            type="text" 
+            id="loginIdentifier"
+            name="identifier" 
+            required 
+            placeholder="9876543210 or email@domain.com"
+            class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500 font-mono"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs text-zinc-300 font-medium mb-1">Password *</label>
+          <input 
+            type="password" 
+            name="password" 
+            required 
+            placeholder="••••••••"
+            class="w-full px-3.5 py-2 rounded-xl bg-onyx-950 border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-400 focus:outline-none focus:border-gold-500"
+          />
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full mt-4 py-3 px-4 rounded-xl bg-gradient-to-r from-gold-500 via-amber-500 to-gold-600 text-black font-extrabold text-xs tracking-wider uppercase flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-gold/30 shadow-lg active:scale-95"
+        >
+          <i data-lucide="log-in" class="w-4 h-4"></i>
+          <span>Sign In & Continue</span>
+        </button>
+      </form>
+
+      <p class="text-[10px] text-zinc-400 text-center mt-4">
+        🔒 Your credentials and personal data are stored safely on your device.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       15. USER PROFILE & ORDER HISTORY MODAL
+       ========================================== -->
+  <div 
+    id="profileModal" 
+    class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md overflow-y-auto"
+  >
+    <div class="relative w-full max-w-lg bg-onyx-900 border border-gold-500/40 rounded-2xl shadow-2xl p-6 my-8">
+      
+      <!-- Close Button -->
+      <button 
+        onclick="closeProfileModal()" 
+        class="absolute top-4 right-4 p-2 rounded-full bg-onyx-950 text-zinc-400 hover:text-white hover:bg-onyx-800 transition-colors border border-white/10"
+      >
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Profile Header -->
+      <div class="flex items-center gap-3.5 pb-4 border-b border-zinc-800/80 mb-4">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-amber-600 flex items-center justify-center text-black font-bold text-lg shadow-gold/20 shadow-md">
+          <i data-lucide="user-check" class="w-6 h-6 text-black"></i>
+        </div>
+        <div>
+          <h4 id="profileName" class="font-serif text-lg font-bold text-white">Customer</h4>
+          <div class="flex items-center gap-3 text-xs text-zinc-400">
+            <span id="profilePhone">+91 0000000000</span>
+            <span>•</span>
+            <span id="profileEmail">user@example.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Past Orders Section -->
+      <div class="mb-6">
+        <h5 class="text-xs font-bold uppercase tracking-wider text-gold-400 mb-3 flex items-center gap-1.5">
+          <i data-lucide="package" class="w-4 h-4"></i>
+          <span>Your Past Orders</span>
+        </h5>
+        <div id="profileOrdersList" class="max-h-60 overflow-y-auto space-y-2 pr-1"></div>
+      </div>
+
+      <!-- Logout Button -->
+      <button 
+        type="button" 
+        onclick="logoutUser()"
+        class="w-full py-2.5 px-4 rounded-xl bg-onyx-950 hover:bg-rose-950/40 text-rose-400 border border-rose-500/20 text-xs font-semibold tracking-wider uppercase transition-colors flex items-center justify-center gap-2"
+      >
+        <i data-lucide="log-out" class="w-4 h-4"></i>
+        <span>Sign Out of Account</span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       16. TOAST NOTIFICATIONS CONTAINER
+       ========================================== -->
+  <div 
+    id="toastContainer" 
+    class="fixed top-4 right-4 z-50 flex flex-col gap-2 max-w-sm pointer-events-none"
+  ></div>
+
+  <!-- Helper for Drawer Dismissal -->
+  <script>
+    function closeAllDrawers() {
+      if (typeof closeCartDrawer === "function") closeCartDrawer();
+      if (typeof closeWishlistDrawer === "function") closeWishlistDrawer();
+    }
+
+    function filterCategoryByFooter(catName) {
+      if (typeof appState !== "undefined") {
+        appState.currentCategory = catName;
+        const pill = document.querySelector(`[data-category-pill="${catName}"]`);
+        if (pill) pill.click();
+        window.scrollTo({ top: 400, behavior: 'smooth' });
+      }
+    }
+  </script>
+
+  <!-- Application Logic Scripts (Clean Modular Architecture) -->
+  <script src="js/products.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
