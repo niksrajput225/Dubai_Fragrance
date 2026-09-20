@@ -1,7 +1,4 @@
-# ==========================================
-# Dubai Fragrances - Production Dockerfile
-# Ultra-lightweight, hardened Nginx Alpine image
-# ==========================================
+
 FROM nginx:1.27-alpine
 
 LABEL maintainer="Dubai Fragrances Team"
